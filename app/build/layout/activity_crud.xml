@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".crud"
+    android:orientation="vertical">
+<LinearLayout
+    android:id="@+id/linearlayout"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="#2B84F5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputNombre"
+        android:hint="Nombre"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/primary_text_light"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputTelefono"
+        android:inputType="number"
+        android:hint="Telefono"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/primary_text_light"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancelar"
+        android:paddingTop="10dp"
+        android:text="Cancelar"
+        android:textAllCaps="false"/>
+</LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView"
+        android:layout_margin="15dp"/>
+</LinearLayout>
